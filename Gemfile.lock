@@ -75,6 +75,8 @@ GEM
     faraday (0.13.1)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.18-x86-mingw32)
+    friendly_id (5.2.3)
+      activerecord (>= 4.0.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     hashie (3.5.7)
@@ -112,6 +114,7 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (~> 0.3.0)
+    pg (1.0.0-x86-mingw32)
     puma (3.11.0)
     rack (2.0.3)
     rack-test (0.6.3)
@@ -200,9 +203,11 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   devise (~> 4.4)
+  friendly_id (~> 5.2, >= 5.2.3)
   jbuilder (~> 2.5)
   jquery-rails
   paperclip (~> 5.1)
+  pg
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
   sass-rails (~> 5.0)

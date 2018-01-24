@@ -1,4 +1,7 @@
 class Movie < ActiveRecord::Base
+	def to_param
+		"#{id} #{title}".parameterize
+	end
 	searchkick
 	belongs_to :user
 	has_many :reviews
